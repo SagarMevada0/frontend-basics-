@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List and Form Example</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        form {
+            border: 2px solid black;
+            padding: 15px;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= LIST TYPES ================= -->
+
+    <!-- * type of list -->
+
+    <!-- 1. Ordered List -->
+    <!-- order (a, A, i, I, 1) -->
+    <ol type="A"> <!-- type="A" capital alphabets -->
+        <li>Item One</li>
+        <li>Item Two</li>
+    </ol>
+
+    <ol type="i"> <!-- roman small -->
+        <li>Apple</li>
+        <li>Banana</li>
+    </ol>
+
+    <!-- 2. Unordered List -->
+    <!-- Unorder (Bullet points) -->
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <!-- 3. Definition / Description List -->
+    <!-- description list -->
+
+    <dl>
+        <!-- <dt> ---- description title -->
+        <dt>Tea</dt>
+
+        <!-- <dd> ---- description data -->
+        <dd>Black Tea</dd>
+        <dd>Green Tea</dd>
+    </dl>
+
+    <hr>
+
+    <!-- ================= FORMS ================= -->
+
+    <!-- * forms -->
+    <!-- login form / other form -->
+    <!-- user ke pass input lena -->
+
+    <!-- method --- GET, POST -->
+    <!-- GET --- retrieve data, URL visible hoti hai, secure nahi -->
+    <!-- POST --- create data, URL me invisible hoti hai -->
+
+    <!-- action ---- data backend me bhejne wali file ka name -->
+
+    <form action="backend.php" method="post">
+
+        <!-- form me caption dena ho to <legend> ka use -->
+        <fieldset>
+            <legend>Login Form</legend>
+
+            <!-- label & placeholder -->
+            <!-- input me id, name backend connect karne ke liye helpful -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter username">
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password">
+            <br><br>
+
+            <!-- radio button -->
+            <!-- label me for="choice" -->
+            <!-- radio me id, value important -->
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br><br>
+
+            <!-- checkbox -->
+            <!-- label for color usme checkbox ka use -->
+            <p>Skills:</p>
+            <input type="checkbox" id="html" name="skill" value="HTML">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="skill" value="CSS">
+            <label for="css">CSS</label>
+            <br><br>
+
+            <!-- datetime -->
+            <label>Date of Birth:</label>
+            <input type="date" name="dob">
+            <br><br>
+
+            <!-- image upload -->
+            <label>Upload Image:</label>
+            <input type="file" name="image">
+            <br><br>
+
+            <!-- number -->
+            <label>Age:</label>
+            <input type="number" name="age">
+            <br><br>
+
+            <!-- telephone number -->
+            <label>Mobile:</label>
+            <input type="tel" name="mobile">
+            <br><br>
+
+            <!-- select / dropdown -->
+            <label>City:</label>
+            <select name="city">
+                <option>Delhi</option>
+                <option>Mumbai</option>
+                <option>Ahmedabad</option>
+            </select>
+            <br><br>
+
+            <!-- textarea -->
+            <!-- address dikhana ho to -->
+            <label>Address:</label><br>
+            <textarea rows="4" cols="30" placeholder="Enter address"></textarea>
+            <br><br>
+
+            <!-- enable / disable button -->
+            <button type="submit">Submit</button>
+            <button type="button" disabled>Disabled Button</button>
+
+        </fieldset>
+
+    </form>
+
+</body>
+</html>

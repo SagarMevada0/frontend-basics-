@@ -1,0 +1,27 @@
+body{
+
+     background-color: aqua;
+    /* img */
+   
+    /* background-image: url(/Html/image/du.jpeg);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed; */
+
+    /* shorthand   ye short line me likha*/
+    background: url(/Html/image/du.jpeg)no-repeat right top fixed;
+    
+}
+/* .opacity{
+    background-color: red;
+    opacity: 1;
+} */
+/* opacity color visibility */
+
+/* repeat x row wise aayega img  */
+/* repeat y wo colum wise hoga up to bottom */
+/* no repeat */
+/* img position right left top down  */
+/* background properties   fixed,scroll*/
+/* img fixed rahege */

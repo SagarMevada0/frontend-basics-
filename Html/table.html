@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table Example</title>
+
+    <style>
+        /* table border css he */
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse; /* double border hatane ke liye */
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- table -->
+    <table>
+
+        <!-- table ka heading <caption> ka use -->
+        <caption>Student Details</caption>
+
+        <!-- <tr> table row -->
+        <tr>
+            <!-- <th> table heading -->
+            <th>ID</th>
+            <th>Name</th>
+            <th>Course</th>
+        </tr>
+
+        <!-- data row -->
+        <tr>
+            <!-- <td> table data -->
+            <td>1</td>
+            <td>Sanju</td>
+            <td>HTML</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Rahul</td>
+            <td>CSS</td>
+        </tr>
+
+        <!-- do jyada column ko merge karna ho to colspan -->
+        <!-- 2 column merge hoke single cell banega -->
+        <tr>
+            <td colspan="2">Total Students</td>
+            <td>2</td>
+        </tr>
+
+        <!-- 2 row ko merge karna ho to rowspan ka use -->
+        <tr>
+            <td rowspan="2">Batch 1</td>
+            <td>Amit</td>
+            <td>JavaScript</td>
+        </tr>
+
+        <tr>
+            <td>Pooja</td>
+            <td>React</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
